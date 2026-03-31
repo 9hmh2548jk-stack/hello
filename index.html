@@ -17,28 +17,54 @@
       justify-content: center;
       background: #f7f8fa;
       font-family: "Microsoft YaHei", sans-serif;
+      gap: 25px; /* 整体上下间距 */
     }
+
     .title {
       font-size: 32px;
-      margin-bottom: 40px;
       color: #333;
     }
-    .btn {
+
+    /* 简历按钮（单独一行） */
+    .btn-resume {
       padding: 14px 32px;
       background: #409eff;
       color: #fff;
       border-radius: 8px;
       text-decoration: none;
       font-size: 16px;
-      transition: 0.3s;
     }
-    .btn:hover {
-      background: #337ecc;
+
+    /* 游戏按钮组容器（多个并排） */
+    .game-group {
+      display: flex;
+      gap: 15px; /* 游戏按钮之间的间距 */
+    }
+
+    /* 游戏按钮样式 */
+    .btn-game {
+      padding: 14px 24px;
+      background: #67c23a;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
+
   <h1 class="title">欢迎来到我的个人主页</h1>
-  <a href="resume.html" class="btn">查看我的简历</a>
+
+  <!-- 第一行：简历（单独一行） -->
+  <a href="resume.html" class="btn-resume">查看我的简历</a>
+
+  <!-- 第二行：多个游戏按钮 并排一行 -->
+  <div class="game-group">
+    <a href="游戏-2.响应式2048小游戏/index.html" class="btn-game">2048小游戏</a>
+    <a href="游戏-51.纸牌记忆游戏\zhipaijiyi.html" class="btn-game">纸牌记忆游戏</a>
+    <a href="游戏-10.杀死国王\index.html" class="btn-game">杀死国王</a>
+  </div>
+
 </body>
 </html>
